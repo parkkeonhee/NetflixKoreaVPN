@@ -108,8 +108,7 @@ Before starting with the setup, ensure you have the following:
 1. Ensure all communications are secure when dealing with VPNs and potentially sensitive user data.
 2. Do not share .ovpn files or credentials.
 3. Keep all systems updated with the latest security patches.
-
-Check and comply with Netflix's terms of service when using this application.
+4. Check and comply with Netflix's terms of service when using this application.
 
 ## Troubleshooting
 
@@ -121,9 +120,7 @@ In case you encounter issues, follow these steps:
 
 ## License
 
-This project is open source under an MIT license; feel free to use, modify, and distribute the code with attribution.
-
-For more detailed information, refer to the LICENSE file in the project repository.
+This project is open source under an MIT license; feel free to use, modify, and distribute the code with attribution. For more detailed information, refer to the LICENSE file in the project repository.
 
 ## Future Work
 
