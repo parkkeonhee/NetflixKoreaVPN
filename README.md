@@ -20,6 +20,26 @@ The architecture includes several key components:
 3. OpenVPN Server: Hosted on an AWS EC2 instance within a Virtual Private Cloud (VPC) to provide network isolation and secure VPN connections using industry-standard encryption protocols.
 4. Amazon Web Services (AWS): Offers scalable infrastructure services required for this project, including the EC2 instances for hosting the OpenVPN server, VPCs for network isolation, Security Groups for managing network traffic, and Elastic IPs for consistent public IP addresses.
 
+# Update on Progress: Sunday, June 4, 2023.
+
+As of now, the Netflix Korea VPN project is progressing well and has successfully enabled access to Netflix South Korea content. Below are two screenshots demonstrating the proof of concept working.
+
+## Screenshot 1: Geographic Location & Ad Banner
+
+![Geographic Location](./demo-screenshots/screenshot1_geolocation.jpg)
+
+The first screenshot shows the approximate geographic location of Incheon, Incheon, South Korea based on my Amazon EC2 instance Public IP address as identified by www.whatsmyip.org. This indicates that our VPN server is functioning correctly and routing traffic through a South Korean IP address.
+
+Additionally, an ad banner in Korean can be seen as further evidence that our connection is being recognized as originating from South Korea. The tab also displays the Netflix South Korea website, confirming successful access to region-specific content.
+
+## Screenshot 2: Hostname & User Agent
+
+![Hostname & User Agent](./demo-screenshots/screenshot2_hostname_useragent.jpg)
+
+The second screenshot shows the Hostname and User Agent information for my EC2 instance in the `ap-northeast-2` (Asia Pacific - Seoul) region. This confirms that our VPN server is running within this specific AWS region.
+
+Similar to Screenshot 1, an ad banner in Korean can be seen as additional proof of concept working. The tab also displays the Netflix South Korea website, verifying successful access to region-specific content once again.
+
 ### How VPN Works
 
 A Virtual Private Network (VPN) creates an encrypted tunnel between the user's device and a remote VPN server. When connected, all internet traffic from the user's device is routed through this secure tunnel, effectively masking their original IP address with one belonging to the VPN server. This process allows users to bypass regional restrictions imposed by content providers like Netflix and access content unavailable in their location.
